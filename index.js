@@ -32,7 +32,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 ██║██║   ██║██╔══██║██║╚██╗██║██║
 ██║╚██████╔╝██║  ██║██║ ╚████║██║
 ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝
-1. ${chalk.greenBright('Push Crown`}
+1. ${chalk.greenBright('Push Crown`)}
 2. ${chalk.greenBright('Push Trophy')}
 3. ${chalk.greenBright('Push Trophy')}
 `)));
@@ -123,7 +123,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
       }
   }
 
- } else if (feature == '3') {
+} else if (feature == '3') {
 
   const auth = rs.question(chalk.greenBright('Enter Auth Keys : '));
   const time = rs.question(chalk.greenBright('Enter Delay In Milisecond : '));
