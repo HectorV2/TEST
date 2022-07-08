@@ -32,12 +32,12 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 ██║██║   ██║██╔══██║██║╚██╗██║██║
 ██║╚██████╔╝██║  ██║██║ ╚████║██║
 ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝
-1. ${chalk.greenBright('Push Crown`)}
+1. ${chalk.greenBright('Push Crown')}
 2. ${chalk.greenBright('Push Trophy')}
 3. ${chalk.greenBright('Push Trophy')}
 `)));
 
- const feature = rs.question('[+] Enter feature needed : ');
+ const feature = rs.question('[+] Enter A Number : ');
 
  if (feature == '1') {
 
@@ -51,7 +51,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.redBright(`Auth Sudah Expired`));
+        console.log(chalk.redBright(`Auth Sudah Expired`));
 
     } else if (result.includes('User')) {
 
